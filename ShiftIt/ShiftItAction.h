@@ -19,6 +19,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class WindowSizer;
+
 /** 
  * A reference to a function that position
  * and size the window's geometry denoted by the windowRect argument
@@ -26,7 +28,7 @@
  * and has a size screenSize. The windowRect is the whole window
  * including any sort window decorators.
  */
-typedef NSRect (*ShiftItFunctionRef)(NSSize screenSize, NSRect windowRect); 
+typedef BOOL (*ShiftItFunctionRef)(WindowSizer *windowSizer, NSError **error); 
 
 @interface ShiftItAction : NSObject {
  @private

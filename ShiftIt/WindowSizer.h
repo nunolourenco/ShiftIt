@@ -27,6 +27,39 @@
 
 @class ShiftItAction;
 
+@interface Screen : NSObject {
+ @private
+	NSRect visibleFrame_;
+	NSRect screenFrame_;
+	BOOL primary_;
+}
+
+@property (readonly) NSSize size;
+@property (readonly) BOOL primary;
+
+@end
+
+typedef void *WindowId;
+
+@interface Window : NSObject {
+ @private	
+	WindowId ref_;
+	NSRect rect_;
+	NSRect originalRect_;
+	Screen *screen_;
+	NSRect drawersRect_;
+#ifdef X11
+	BOOL x11win_;
+	NSRect x11coordRect_;
+#endif
+}
+
+@property (readonly) NSPoint origin;
+@property (readonly) NSSize size;
+@property (readonly) Screen *screen;
+
+@end
+
 @interface WindowSizer : NSObject {
  @private
     AXUIElementRef axSystemWideElement_;
@@ -34,9 +67,16 @@
 	int menuBarHeight_;
 }
 
+
 + (WindowSizer *) sharedWindowSize;
 
-- (void) shiftFocusedWindowUsing:(ShiftItAction *)action error:(NSError **)error;
-- (NSScreen *)chooseScreenForWindow_:(NSRect)windowRect;
+- (void) focusedWindow:(Window **)window error:(NSError **)error;
+- (void) shiftWindow:(Window *)window to:(NSPoint)origin size:(NSSize)size screen:(Screen *)screen error:(NSError **)error;
+
+//- (ScreenRef) screenLeftOf:(ScreenRef)screen flipOver:(BOOL)flip;
+//- (ScreenRef) screenAbove:(ScreenRef)screen flipOver:(BOOL)flip;
+//- (ScreenRef) screenBelow:(ScreenRef)screen flipOver:(BOOL)flip;
+//- (ScreenRef) screenRightOf:(ScreenRef)screen flipOver:(BOOL)flip;
+
 
 @end
