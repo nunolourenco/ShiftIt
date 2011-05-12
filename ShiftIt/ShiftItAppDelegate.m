@@ -59,7 +59,7 @@ NSInteger const kUnableToChangeWindowSizeErrorCode = 20102;
 
 NSDictionary *allShiftActions = nil;
 
-int margin = 8;
+int margin = 0;
 
 @interface ShiftItAppDelegate (Private)
 
