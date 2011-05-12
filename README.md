@@ -12,4 +12,3 @@ This is a sub-fork from the original [ShiftIt][1] by [Aravindkumar Rajendiran][2
 Version 1.5.2 adds Undo support - you can now restore previous window positions (as long as they were handled by ShiftIt)
 
 
-Please refer to the [forks](https://github.com/rcarmo/ShiftIt/network) listing for more documentation and related work (kudos to the folk who picked this up before I did).
