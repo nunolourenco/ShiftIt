@@ -1,6 +1,6 @@
-<h1><img src="https://github.com/rcarmo/ShiftIt/raw/master/artwork/ShiftIt.png" width="72" height="72" valign="middle"/>  ShiftIt</h1>
+<h1><img src="hhttps://github.com/nunolourenco/ShiftIt/blob/master/artwork/ShiftIt.png" width="72" height="72" valign="middle"/>  ShiftIt</h1>
 
-Download [here](https://github.com/downloads/rcarmo/ShiftIt/20110103-ShiftIt-noX11.zip).
+Download [here](https://download.github.com/nunolourenco-ShiftIt-version-1.5-46-ge390bad.zip).
 
 About
 --------
@@ -12,3 +12,4 @@ This is a sub-fork from the original [ShiftIt][1] by [Aravindkumar Rajendiran][2
 Version 1.5.2 adds Undo support - you can now restore previous window positions (as long as they were handled by ShiftIt)
 
 
+EDIT: Window Margins removed.
