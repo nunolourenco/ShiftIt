@@ -1,5 +1,3 @@
-<h1><img src="hhttps://github.com/nunolourenco/ShiftIt/blob/master/artwork/ShiftIt.png" width="72" height="72" valign="middle"/>  ShiftIt</h1>
-
 Download [here](https://download.github.com/nunolourenco-ShiftIt-version-1.5-46-ge390bad.zip).
 
 About
